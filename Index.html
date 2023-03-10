@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&W</title>
+    <link rel="icon" type="images/x-icon"
+        href="https://www.davidandwilliam.com/wp-content/uploads/2019/04/dw-logo3-300x115.png" />
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- <script src="index.js"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+
+<body onload="preload()">
+    <div id="preloader"></div>
+
+    <script>
+        var preloader = document.getElementById("preloader");
+        function preload() {
+            preloader.style.display = 'none';
+        }
+        </script>
+
+    <!-- Navbar start -->
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="Index.html">
+                <img src="assets\logos\dw-logo3-300x115.png" alt="D&W" width="100" height="50">
+            </a>
+            <nav class="navbar bg-body-dark">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg bg-body-dark">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#"></a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <img src="assets\logos\icons8-paid-26.png" class="cart" alt="" width="26px"
+                                    height="30px">
+                                <a class="nav-link activ" aria-current="page" href="#"><b>Cart</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign up</a>
+                            </li>
+                            <li class="nav-item" id="yo">
+                                <a class="nav-link" href="#">Sign in</a>
+                            </li>
+                            <!-- <li class="nav-item"> -->
+                            <!-- <a class="nav-link disabled"></a> -->
+                            <!-- </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </nav>
+    <!-- Navbar Completed -->
+    <br>
+    <br>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            /* background-color: black; */
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            /* color: black; */
+            background-color: black;
+        }
+
+        .mySlides {
+            display: none;
+            /* background-color: black; */
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        /* .text { 
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }*/
+
+        /* Number text (1/3 etc) */
+        /* .numbertext { 
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        } */
+
+        /* The dots/bullets/indicators */
+        /* .dot { 
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: black;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }*/
+
+        .active {
+            background-color: black;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 10s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+
+
+    </head>
+
+    <body>
+
+
+
+        <div class="slideshow-container">
+            <div class="typewriter">
+                <h3>WELCOME TO THE WORLD OF MEN</h3>
+            </div>
+            <br>
+            <br>
+            <div class="mySlides fade">
+                <img src="https://gatsbyindia.com/img/product/Web-banner-kito-dio.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/043/916/283/large/neeraj-kumar-watch-banner.jpg?1638602434"
+                    style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets\slideshow banners\Web-banner-shower-gel.jpg" style="width:100%">
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 7000); // Change image every 7 seconds
+                }
+            </script>
+            <!-- product listing starts -->
+            <br>
+            <br>
+            <div class="items">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://image-prod.iol.co.za/resize/960x960/Image-Pexels?source=https://xlibris.public.prod.oc.inl.infomaker.io:8443/opencontent/objects/c203501b-8e2e-5278-afb4-c72c088e65bc&operation=CROP&offset=594x0&resize=2356x2356&webp=true"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><i>Exclusives</i></h5>
+                        <p class="card-text"></p>
+                        <a href="https://www.rolex.com/watches/find-rolex/man.html#p=1" class="btn btn-dark">Shop
+                            Now</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets\61E8Q7i2RsL._SX522_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><i>D&W Combo</i></h5>
+                        <p class="card-text"></p>
+                        <a href="" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets\20044271_2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><i>Casual mood</i></h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+        <br>
+            <h4 class="b3">Evening Dine</h4>
+           
+            <div class="card mb-3" id="banner">
+                <a href="https://lovelyfashion.in/product-category/accessories/" target="_blank"><img
+                        src="assets\JB_Web_Banner_B_958x340.jpg" class="card-img-top" alt="..."></a>
+                <!-- <div class="card-body">
+                   <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> 
+                </div>-->
+            </div>
+            <br>
+            <h4 class="b2">New Arrivals</h4>
+        
+            <div class="card mb-3" id="banner">
+                <a href="https://sbam.in/end-of-season-sale-starts-for-mens-clothing/" target="_blank"><img
+                        src="assets\TWM-Banner.webp" class="card-img-top" alt="..."></a>
+                <!-- <div class="card-body">
+                   <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> 
+                </div>-->
+            </div>
+            <br>
+                <h4 class="b3">Autumn Rise</h4>
+        
+            <div class="card mb-3" id="banner">
+                <a href="https://www.celio.in/celio-all-products" target="_blank"><img
+                        src="assets\484-2023_01_12-website_banner_deskop.webp" class="card-img-top" alt="..."></a>
+                <!-- <div class="card-body">
+                   <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> 
+                </div>-->
+            </div>
+
+    </body>
+    <br>
+    <br>
+    <Footer>
+        <div class="footer">
+            <div class="About">
+                <div class="ABOUT">ABOUT</div>
+                <a href="#" id="foot">Contact</a>
+                <a href="#" id="foot">About</a>
+                <a href="#" id="foot">Press</a>
+            </div>
+            <div class="About">
+                <div class="ABOUT">HELP</div>
+                <a href="#" id="foot">Payment</a>
+                <a href="#" id="foot">Shipping</a>
+                <a href="#" id="foot">FAQ</a>
+            </div>
+            <div class="About">
+                <div class="ABOUT">POLICY</div>
+                <a href="#" id="foot">Security</a>
+                <a href="#" id="foot">Privacy</a>
+                <a href="#" id="foot">Return Policy</a>
+            </div>
+            <div class="About">
+                <div class="ABOUT">SOCIAL</div>
+                <a href="#" id="foot">Instagram</a>
+                <a href="#" id="foot">Twitter</a>
+                <a href="#" id="foot">Youtube</a>
+            </div>
+            <div class="d-flex" style="height: 170px; width:200px; color: aliceblue;">
+                <div class="vr"></div>
+            </div>
+            <div class="Abou">
+                <div class="ABOUT">Mail Us:</div>
+                <p id="mail">D&W Internet Private Limited,
+
+                    Buildings Alyssa, Begonia &
+
+                    Clove Embassy Tech Village,
+
+                    Outer Ring Road, Devarabeesanahalli Village,
+
+                    Bengaluru, 560103,
+
+                    Karnataka, India</p>
+            </div>
+        </div>
+
+            <p id="footborder"></p>
+            <p style="padding-left: 28%; color: grey;">Developed and Maintained with ❤️ by @GitWiz01 (GitHub)</p>
+    </Footer>
+
+
+</html>

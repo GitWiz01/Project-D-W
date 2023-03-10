@@ -1,0 +1,114 @@
+html{
+    background-color: black;
+}
+#preloader{
+  background: black url(https://images.squarespace-cdn.com/content/v1/585a4892bebafba69928fcd7/1485950598454-T89580HQKGIWGPE93UDB/last+black+man.gif?format=2500w) no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.navbar-brand{
+    padding-left: 0px;
+}
+.nav-item{
+    display: flex;
+    flex-wrap: column;
+}
+.cart{
+    padding-top: 8px;
+    background-color: transparent;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+.About{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+    /* padding-left: 1%; */
+    /* color: white; */
+
+}
+#foot{
+    color: rgb(141, 140, 140);
+    padding-top: 15%;
+    text-decoration: none;
+ 
+        display: inline-block;
+        position: relative;
+        color:rgb(141, 140, 140);
+      }
+      
+      #foot:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color:rgb(141, 140, 140);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      #foot:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+#mail{
+    color: rgb(141, 140, 140);
+}
+.items{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+   margin: auto;
+}
+/* DEMO-SPECIFIC STYLES */
+.typewriter h3{
+    color: rgb(141, 140, 140);
+    font-family: 'Playfair Display SC', serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /*border-right: .15em solid grey; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 ; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    padding-left: 23%;
+    animation: 
+      typing 3.5s steps(100, end),
+      blink-caret 1s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: grey }
+  }
+#banner{
+  border: 1px solid black;
+}
+#footborder{
+  border: 1px solid white;
+  border-width: 0.1px;
+}
+.b1,.b2,.b3{
+  padding-left: 40%;
+  color:  rgb(141, 140, 140);
+  font-family:'Playfair Display SC', serif;
+}
+
+
+
+
