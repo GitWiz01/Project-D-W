@@ -1,7 +1,8 @@
-html{
+html {
 	background-color: black;
 }
-#preloader{
+
+#preloader {
 	background: black url(https://images.squarespace-cdn.com/content/v1/585a4892bebafba69928fcd7/1485950598454-T89580HQKGIWGPE93UDB/last+black+man.gif?format=2500w) no-repeat center center;
 	background-size: 15%;
 	height: 100vh;
@@ -9,10 +10,12 @@ html{
 	position: fixed;
 	z-index: 100;
 }
-.navbar-brand{
+
+.navbar-brand {
 	padding-left: 0px;
 }
-.nav-item{
+
+.nav-item {
 	display: flex;
 	flex-wrap: column;
 }
@@ -21,20 +24,22 @@ html{
 	transition: 0.5s;
 }
 
-.nav-link:hover > .cartText {
+.nav-link:hover>.cartText {
 	color: #198754;
 }
 
-.cart{
+.cart {
 	padding-top: 8px;
 	background-color: transparent;
 }
-.footer{
+
+.footer {
 	display: flex;
 	flex-direction: row;
 	/* flex-wrap: wrap; */
 }
-.About{
+
+.About {
 	display: flex;
 	flex-direction: column;
 	padding-right: 10%;
@@ -42,88 +47,118 @@ html{
 	/* color: white; */
 
 }
-#foot{
+
+#foot {
 	color: rgb(141, 140, 140);
 	padding-top: 15%;
 	text-decoration: none;
- 
-		display: inline-block;
-		position: relative;
-		color:rgb(141, 140, 140);
-		}
-		
-		#foot:after {
-		content: '';
-		position: absolute;
-		width: 100%;
-		transform: scaleX(0);
-		height: 2px;
-		bottom: 0;
-		left: 0;
-		background-color:rgb(141, 140, 140);
-		transform-origin: bottom right;
-		transition: transform 0.25s ease-out;
-		}
-		#foot:hover:after {
-		transform: scaleX(1);
-		transform-origin: bottom left;
-		}
 
-#mail{
+	display: inline-block;
+	position: relative;
 	color: rgb(141, 140, 140);
 }
-.items{
+
+#foot:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(141, 140, 140);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+#foot:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+#mail {
+	color: rgb(141, 140, 140);
+}
+
+.items {
 	display: flex;
 	flex-direction: row;
 }
-.card{
+
+.card {
 	margin: auto;
 }
+
 /* DEMO-SPECIFIC STYLES */
-.typewriter h3{
+.typewriter h3 {
 	color: rgb(141, 140, 140);
 	font-family: 'Playfair Display SC', serif;
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	overflow: hidden;
+	/* Ensures the content is not revealed until the animation */
 	/*border-right: .15em solid grey; /* The typwriter cursor */
-	white-space: nowrap; /* Keeps the content on a single line */
-	margin: 0 ; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: .10em; /* Adjust as needed */
+	white-space: nowrap;
+	/* Keeps the content on a single line */
+	margin: 0;
+	/* Gives that scrolling effect as the typing happens */
+	letter-spacing: .10em;
+	/* Adjust as needed */
 	padding-left: 23%;
 	animation:
 		typing 3.5s steps(100, end),
 		blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0
 	}
-	
-	/* The typing effect */
-	@keyframes typing {
-	from { width: 0 }
-	to { width: 100% }
+
+	to {
+		width: 100%
 	}
-	
-	/* The typewriter cursor effect */
-	@keyframes blink-caret {
-	from, to { border-color: transparent }
-	50% { border-color: grey }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+	from,
+	to {
+		border-color: transparent
 	}
-#banner{
+
+	50% {
+		border-color: grey
+	}
+}
+
+#banner {
 	border: 1px solid black;
 }
-#footborder{
+
+#footborder {
 	border: 1px solid white;
 	border-width: 0.1px;
 
 }
-.b1,.b2,.b3{
+
+.b1,
+.b2,
+.b3 {
 	padding-left: 40%;
-	color:  rgb(141, 140, 140);
-	font-family:'Playfair Display SC', serif;
+	color: rgb(141, 140, 140);
+	font-family: 'Playfair Display SC', serif;
 }
+
 #Ecard:hover {
-	-ms-transform: scale(1.1); /* IE 9 */
-	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	-ms-transform: scale(1.1);
+	/* IE 9 */
+	-webkit-transform: scale(1.1);
+	/* Safari 3-8 */
 	transform: scale(1.1);
 }
-#Ecard{
+
+#Ecard {
 	padding: auto;
 	/* background-color: green; */
 	transition: transform .9s;
@@ -131,3 +166,93 @@ html{
 	height: 100%;
 	margin: 0 auto;
 }
+
+/* RESPONSIVNESS  */
+@media only screen and (max-width:772px) {
+
+	.navbar>.container,
+	.navbar>.container-fluid,
+	.navbar>.container-lg,
+	.navbar>.container-md,
+	.navbar>.container-sm,
+	.navbar>.container-xl,
+	.navbar>.container-xxl {
+		padding: 0px;
+	}
+	.container, .container-sm {
+		max-width: 697px;
+	}
+	element.style {
+		padding-left: 9%;
+		
+	}
+	div .d-flex input{
+		width: 180px;
+	}
+	.typewriter h3{
+		padding-left: 16%;
+	}
+	div .resp{
+		display: flex;
+		flex-direction: column;
+	}
+	#foot {
+		color: rgb(141, 140, 140);
+		padding-top: 3%;
+	}
+	.About {
+		padding-left: 5%;
+		padding-top: 35px;
+		margin-bottom: 3%;
+	}
+	.About .resp2 {
+		margin-bottom: 3%;
+	}
+	div .Abou{
+		padding-left: 5%;
+		margin-top: 5%;
+	}
+	div .Abou p{
+		margin-top: 2%;
+	}
+}
+@media only screen and (max-width:585px){
+	nav .container .navbar-brand img{
+		width: 78px;
+		height: 35px;
+		padding-left: 5px;
+	}
+	 div .d-flex input{
+		width: 168px;
+	}
+	.typewriter h3 {
+		padding-left: 15%;
+		font-size: 1.2rem;
+	}
+}
+@media only screen and (max-width:463px){
+	.typewriter h3 {
+		padding-left: 7%;
+		font-size: 1.2rem;
+	}
+	div .d-flex input{
+		width: 90px;
+	}
+	div .d-flex button{
+		padding: 1px 2px;
+
+	}
+
+}
+@media only screen and (max-width:404px){
+	nav .container .navbar-brand img {
+		width: 65px;
+		height: 36px;
+		padding-left: 5px;
+	}
+	.typewriter h3 {
+		padding-left: 9%;
+		font-size: 1rem;
+	}
+}
+
