@@ -101,6 +101,10 @@
 			text-align: center;
 		}
 
+		#about-footer #footborder {
+			margin: auto;
+		}
+
 		.footer {
 			text-align: left;
 			justify-content: center;
@@ -108,6 +112,54 @@
 			max-width: 1000px;
 		}
 
+		@media only screen and (max-width:772px) {
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+	padding: 0px;
+}
+.container, .container-sm {
+	max-width: 697px;
+}
+element.style {
+	padding-left: 9%;
+	
+}
+div .d-flex input{
+	width: 180px;
+}
+.typewriter h3{
+	padding-left: 16%;
+}
+div .resp{
+	display: flex;
+	flex-direction: column;
+}
+#foot {
+	color: rgb(141, 140, 140);
+	padding-top: 3%;
+}
+.About {
+	padding-left: 5%;
+	padding-top: 35px;
+	margin-bottom: 3%;
+}
+.About .resp2 {
+	margin-bottom: 3%;
+}
+div .Abou{
+	padding-left: 5%;
+	margin-top: 5%;
+}
+div .Abou p{
+	margin-top: 2%;
+}
+}
 		/* On smaller screens, decrease text size */
 		@media only screen and (max-width: 300px) {
 			.text {
@@ -126,7 +178,8 @@
 </body>
 <br>
 <br>
-	<Footer id="about-footer">
+	<Footer>
+		<div id="about-footer">
 		<div class="footer resp ">
 			<div class="About">
 				<div class="ABOUT  ">ABOUT</div>
@@ -170,5 +223,6 @@
 
 		<p id="footborder" style="max-width: 1000px;"></p>
 		<p  style=" padding-left: 5%; color: grey; max-width: 1000px;">Developed and Maintained with ❤️ by @GitWiz01 (GitHub)</p>
+		</div>
 	</Footer>
 </html>
