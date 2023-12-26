@@ -101,7 +101,7 @@
 			text-align: center;
 		}
 
-		#about-footer #footborder {
+		#about-footer #footborder, #develop-info {
 			margin: auto;
 		}
 
@@ -111,6 +111,7 @@
 			margin: auto;
 			max-width: 1000px;
 		}
+		@media only screen and (max-width:1024px) {}
 
 		@media only screen and (max-width:772px) {
 
@@ -123,16 +124,10 @@
 .navbar>.container-xxl {
 	padding: 0px;
 }
-.container, .container-sm {
-	max-width: 697px;
-}
 element.style {
-	padding-left: 9%;
-	
-}
-div .d-flex input{
-	width: 180px;
-}
+		padding-left: 9%;
+		
+	}
 .typewriter h3{
 	padding-left: 16%;
 }
@@ -158,6 +153,12 @@ div .Abou{
 }
 div .Abou p{
 	margin-top: 2%;
+}
+#about-footer {
+	position: relative;
+}
+#develop-info {
+	padding-left: 0;
 }
 }
 		/* On smaller screens, decrease text size */
@@ -205,7 +206,7 @@ div .Abou p{
 				<a href="#" id="foot">Twitter</a>
 				<a href="#" id="foot">Youtube</a>
 			</div>
-			<div class="About">
+			<div class="Abou">
 				<div class="ABOUT">Mail Us:</div>
 				<p id="mail">D&W Internet Private Limited,
 
@@ -222,7 +223,10 @@ div .Abou p{
 		</div>
 
 		<p id="footborder" style="max-width: 1000px;"></p>
-		<p  style=" padding-left: 5%; color: grey; max-width: 1000px;">Developed and Maintained with ❤️ by @GitWiz01 (GitHub)</p>
+		<div style="text-align: left; max-width: 1000px; margin: auto;">
+			<p id="develop-info" style="padding-left: 5%; color: grey; max-width: 1000px;">Developed and Maintained with ❤️ by @GitWiz01 (GitHub)</p>
+			</div>
 		</div>
+		
 	</Footer>
 </html>
